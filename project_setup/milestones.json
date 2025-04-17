@@ -1,0 +1,27 @@
+// Template: Define your project's milestones (phases, sprints, major releases).
+// The 'title' is used in issues.json to link issues.
+// 'due_on' is optional (format: "YYYY-MM-DDTHH:MM:SSZ" or null).
+[
+  {
+    "title": "Phase 1: Planning & Design",
+    "description": "Define project scope, requirements, architecture, and initial design.",
+    "due_on": null // Example: "2025-05-31T23:59:59Z"
+  },
+  {
+    "title": "Phase 2: Core Development (MVP)",
+    "description": "Implement the minimum viable product features.",
+    "due_on": null
+  },
+  {
+    "title": "Phase 3: Testing & Refinement",
+    "description": "Conduct testing, gather feedback, and refine features.",
+    "due_on": null
+  },
+  {
+    "title": "V1.0 Launch",
+    "description": "Prepare for and execute the initial public launch.",
+    "due_on": null
+  }
+  // --- Add or modify milestones specific to your project ---
+]
+

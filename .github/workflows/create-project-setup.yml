@@ -1,0 +1,33 @@
+name: Create/Update Project Setup (Milestones, Labels & Issues)
+
+on:
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  create_setup:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write      # Needed for creating/managing issues, milestones, labels
+      contents: read     # Needed for actions/checkout to clone the repo
+    defaults:
+      run:
+        # Set working directory to where the Go script and JSON files are
+        working-directory: ./project_setup
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22' # Use a recent Go version
+
+      - name: Run project setup script
+        env:
+          # GITHUB_TOKEN is automatically provided by GitHub Actions
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # GITHUB_REPOSITORY is automatically provided in owner/repo format
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        # Execute the Go program
+        run: go run main.go
+

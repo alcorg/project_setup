@@ -1,0 +1,73 @@
+// Template: Define your project's standard labels here.
+// The 'name' is used in issues.json. 'color' is hex without '#'.
+[
+  {
+    "name": "type: feature",
+    "description": "New feature or enhancement",
+    "color": "a2eeef"
+  },
+  {
+    "name": "type: bug",
+    "description": "Something isn't working",
+    "color": "d73a4a"
+  },
+  {
+    "name": "type: task",
+    "description": "General task or chore",
+    "color": "ffffff"
+  },
+  {
+    "name": "type: documentation",
+    "description": "Improvements or additions to documentation",
+    "color": "0075ca"
+  },
+  {
+    "name": "priority: high",
+    "description": "High priority",
+    "color": "b60205"
+  },
+  {
+    "name": "priority: medium",
+    "description": "Medium priority",
+    "color": "fbca04"
+  },
+  {
+    "name": "priority: low",
+    "description": "Low priority",
+    "color": "0e8a16"
+  },
+  {
+    "name": "status: backlog",
+    "description": "Not yet planned for action",
+    "color": "e4e669"
+  },
+  {
+    "name": "status: todo",
+    "description": "Ready to be worked on",
+    "color": "5319e7"
+  },
+  {
+    "name": "status: in-progress",
+    "description": "Currently being worked on",
+    "color": "5319e7"
+  },
+  {
+    "name": "status: done",
+    "description": "Completed",
+    "color": "008672"
+  }
+  // --- Add your project-specific labels below ---
+  // Example: Component-specific label
+  // {
+  //   "name": "component: <YourComponentName>",
+  //   "description": "Related to <YourComponentName>",
+  //   "color": "f9d0c4"
+  // },
+  // Example: Module-specific label
+  // {
+  //   "name": "module: <YourModuleName>",
+  //   "description": "Related to <YourModuleName>",
+  //   "color": "c5def5"
+  // }
+]
+

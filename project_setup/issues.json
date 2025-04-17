@@ -1,0 +1,38 @@
+// Template: Define your initial project issues.
+// - 'labels': Use exact names defined in labels.json.
+// - 'milestone_title': Use exact titles defined in milestones.json.
+[
+  {
+    "title": "[Phase 1] Setup Project Repository & CI/CD",
+    "description": "Initialize the Git repository, configure basic branch protection, and set up the initial CI/CD pipeline using GitHub Actions.",
+    "labels": ["type: task", "priority: high"],
+    "milestone_title": "Phase 1: Planning & Design"
+  },
+  {
+    "title": "[Phase 1] Define Core Data Models",
+    "description": "Document the primary data structures and relationships needed for the application.",
+    "labels": ["type: task", "type: documentation"],
+    "milestone_title": "Phase 1: Planning & Design"
+  },
+  {
+    "title": "[Phase 2] Implement User Authentication",
+    "description": "Set up user registration, login, and session management.",
+    "labels": ["type: feature", "priority: high"],
+    "milestone_title": "Phase 2: Core Development (MVP)"
+  },
+  {
+    "title": "[Phase 2] Build Core Feature X",
+    "description": "Implement the main functionality for Feature X as defined in the requirements.",
+    "labels": ["type: feature"],
+    "milestone_title": "Phase 2: Core Development (MVP)"
+  }
+  // --- Add your project's specific initial issues below ---
+  // Example:
+  // {
+  //   "title": "[Your Milestone] Task Name",
+  //   "description": "Detailed description of the task.",
+  //   "labels": ["type: task", "component: <YourComponentName>"],
+  //   "milestone_title": "Your Milestone Title From milestones.json"
+  // }
+]
+
