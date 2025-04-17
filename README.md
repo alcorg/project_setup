@@ -32,3 +32,7 @@ This setup allows you to quickly bootstrap a new project's structure in GitHub I
 *   The GitHub Action requires `issues: write` and `contents: read` permissions (provided in the workflow file).
 *   If running `main.go` locally, you need Go installed and must set the `GITHUB_TOKEN` and `GITHUB_REPOSITORY` environment variables.
 
+## NB
+**Important Limitation: JSON Comments**
+
+The standard JSON format does **not** support comments (`// ...` or `/* ... */`). While comments are included in the template `.json` files (`labels.json`, `milestones.json`, `issues.json`) for better readability and guidance, they **must be removed** before running the GitHub Actions workflow. The Go script uses the standard Go JSON parser, which will fail if comments are present. Ensure your final JSON files are strictly valid JSON before triggering the automation.
